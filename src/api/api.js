@@ -70,4 +70,34 @@ export const uploadNotice = (data) => {
         data
     })
 }
+
+// 上传直播场次ID
+
+export const uploadLive = (data) => {
+    return request({
+        url: url + '?s=App.Live.SetLive',
+        method: 'post',
+        data
+    })
+}
+
+// 获取房间信息
+
+export const getRoomList = (params) => {
+    return request({
+        url: url + '?s=App.Room.GetRoom',
+        method: 'get',
+        params
+    })
+}
+
+// 批量获取直播间信息
+
+export const getRoomListBatch = (params) => {
+    return request({
+        url: url + '?s=App.Livestatus.GetLivestatus',
+        method: 'get',
+        params
+    })
+}
  

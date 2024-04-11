@@ -7,7 +7,7 @@ module.exports = defineConfig({
         target: 'http://websocket.com/',
         changeOrigin: true,
         pathRewrite: { '/api': '' },
-      },
+      }
     },
   },
 })
